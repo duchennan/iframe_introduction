@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe语法简介</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            background-color: red;
+        }
+        header iframe {
+            width: 90%;
+            height: 600px;
+            border: medium solid gray;
+        }
+        section h1 {
+            text-align: left;
+            color: yellow;
+            background-color: red;
+        }
+        section ol li pre {
+            font-size: large;
+            color: red;
+        }
+        footer {
+            height: 100px;
+            background-color: red;
+            color: yellow;
+            font-size: 30px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>iframe语法汇总</h1>
+        <iframe src="https://www.runoob.com/tags/tag-iframe.html" name="video_person"></iframe>
+    </header>
+
+    <section>
+        <h1>iframe语法使用：</h1>
+        <ol>
+            <li>
+                <p>src属性：规定在 iframe中显示的文档的 URL（默认显示）</p>
+                <p>例如上述代码：<pre> &lt;iframe src="https://www.runoob.com/tags/tag-iframe.html"&gt; &lt;/iframe&gt;</pre></p>
+                <p>此代码也是语法汇总的源代码</p>
+            </li>
+            <br>
+            <hr>
+            <li>
+                <p>先规定iframe的name属性，再将超链接的target属性换成iframe的name</p>
+                <p>示例代码如下：</p>
+                <p>
+                    <pre>
+                        &lt;iframe src="" name = "video_person" &gt; &lt;/iframe&gt;
+                        &lt;a href="" target="video_person"&gt;&lt;/a &gt;
+                    </pre>
+                </p>
+                <p>效果：将超链接在iframe中显示，下面链接可供实验：点击后替换上面小窗口的网页</p>
+                <a href="https://mpage.taobao.com/hd/download.html" target="video_person">淘宝</a>
+            </li>
+        </ol>
+    </section>
+    <hr>
+</body>
+</html>
